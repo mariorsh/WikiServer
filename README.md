@@ -1,5 +1,6 @@
 # WikiServer
 ## Como añadir al WebServer
+Añade esa parte al principio del do_get y encapsula tu código dentro del else
 ```python
 if '/wiki.html' in self.path:
             #self.wfile.write(file_to_open)
@@ -18,7 +19,6 @@ if '/wiki.html' in self.path:
             self.wfile.write(file_to_open)
         else:
 ```
-Añade esa parte al principio del do_get y encapsula tu código dentro del else
 También copia el método que escribe la página
 ```python
 def print_wiki(self):
